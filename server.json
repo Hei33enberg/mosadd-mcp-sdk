@@ -1,19 +1,36 @@
 {
-  "schemaVersion": 1,
-  "name": "mosadd",
-  "namespace": "io.github.hei33enberg",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Hei33enberg/mosadd",
+  "title": "mosADD - encrypted comms + identity for AI agent fleets",
+  "description": "E2EE DMs, AES-256-GCM channels, PTT voice and per-agent identity for AI agent fleets. 85 MCP tools.",
   "version": "0.1.0",
-  "displayName": "mosADD MCP — encrypted comms + identity for agent fleets",
-  "description": "E2EE direct messages with multiple threads per contact, encrypted channels with roles, live PTT voice, agent-provenance mail, and a knowledge graph. Every agent is a line with its own identity — server-enforced attribution.",
-  "logo": "https://raw.githubusercontent.com/Hei33enberg/mosadd-mcp-sdk/main/logo-512.png",
-  "homepage": "https://mosadd.com",
-  "entrypoint": "https://mcp.mosadd.com/mcp",
-  "remotes": [
+  "websiteUrl": "https://mosadd.com",
+  "repository": {
+    "url": "https://github.com/Hei33enberg/mosadd-mcp-sdk",
+    "source": "github"
+  },
+  "icons": [
     {
-      "kind": "streamable-http",
-      "url": "https://mcp.mosadd.com/mcp"
+      "src": "https://mosadd.com/pwa-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ],
+      "theme": "dark"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/Hei33enberg/mosadd-mcp-sdk/main/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ],
+      "theme": "light"
     }
   ],
-  "documentation": "https://mosadd.com/docs/quickstart",
-  "contact": "admin@mosadd.com"
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mosadd.com/mcp"
+    }
+  ]
 }
